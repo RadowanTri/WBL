@@ -408,16 +408,17 @@
             .gallery-container {
                 max-width: 240px;
             }
+            .banner-area .bg-abs img {
+                max-width: 75%;
+            }
+            .wbl-compare-c .tier-num {
+                width: 280px;
+            }
         }
         
         @media (min-width: 320px) and (max-width: 375px) {
             .achievement-wrapper .f-row-reverse {
                 flex-direction: column-reverse;
-            }
-            .wbl-compare-c .tier-num {
-                padding: 10px;
-                width: 280px;
-                text-align: left;
             }
             .tier {
                 margin-bottom: 25px;

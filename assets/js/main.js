@@ -151,9 +151,24 @@ $(document).ready(function($) {
         }
     });
 
-// WOW active
-new WOW().init();
+    // WOW active
+    new WOW().init();
+    $(window).on('scroll', function() {
+        var scroll = $(window).scrollTop();
+        if (scroll < 245) {
+            $(".header-transparent ").removeClass("sticky ");
+        } else {
+            $(".header-transparent ").addClass("sticky ");
+        }
+    });
+    $(function() {
 
+        $(".sub-menu ").parent("li ").on("click ", function(e) {
+            $("sub-menu ").removeClass("close ");
+            $(this).find(".sub-menu ").toggleClass("open ");
+        });
+
+    });
 
 
 

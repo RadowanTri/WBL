@@ -21,11 +21,14 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!--=== Magnific PopUp ===-->
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!--=== animate ===-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <!--=== Style & Responsive  Css ===-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--=== allcourse Css ===-->
     <link rel="stylesheet" href="assets/css/allcourse.css">
     <!--=== Responsive Css ===-->
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -33,14 +36,15 @@
 </head>
 
 <body>
-    <header id="header">
+    <!-- header start -->
+    <header class="header-transparent tt-nav" id="top-header">
         <div class="header-area">
             <nav class="navbar navbar-expand-md">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                        <i class="fas fa-times"></i>
-                    </button>
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </button>
 
                     <a class="navbar-brand" href="index.html">
                         <img src="assets/img/logo/logo.png" alt="logo">
@@ -55,19 +59,10 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                 <li class="nav-items">
                                     <a class="nav-link dropdown-item" href="#">
-                                        <span class="ms-2">items1</span>
+                                        <span>No items Select</span>
                                     </a>
                                 </li>
-                                <li class="nav-items">
-                                    <a class="nav-link dropdown-item" href="#">
-                                        <span class="ms-2">items1</span>
-                                    </a>
-                                </li>
-                                <li class="nav-items">
-                                    <a class="nav-link dropdown-item" href="#">
-                                        <span class="ms-2">items1</span>
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
 
@@ -75,48 +70,40 @@
                     <div class="d-block d-md-none login-b">
                         <a href="javascript:void(0)" class="log-btn cmn-btn">Log in</a>
                     </div>
-
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse nav-links" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <div class="dropdown">
-                                    <a href="#" class="nav-link  toggle-none dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-
-                                        <span class="me-2">Categories</span>
-                                        <i class="fas fa-chevron-down"></i>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="#">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Categories</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="#">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Categories</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="#">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Categories</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a class="nav-link" aria-current="page" href="neurodivergent.html">Neurodivergent</a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link active" href="live.html">Live</a>
+
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a href="#" class="nav-link">
+
+                                  Categories
+                                    <span class="indicator"><i class="fas fa-chevron-down"></i></span>
+                                    
+                            </a>
+                                <ul class="sub-menu">
+                                    <li><a href="all.html">All Courses</a></li>
+                                    <li><a href="trier.html">Trier One</a></li>
+                                    <li><a href="trier2.html">Trier Two</a></li>
+                                    <li><a href="trier3.html">Trier Three</a></li>
+                                    <li><a href="trier4.html">Trier Four</a></li>
+                                    <li><a href="trier5.html">Trier Five</a></li>
+                                </ul>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link search-nav" href="#">
                                     <img src="assets/img/icons/carbon_search.svg" alt="">
                                 </a>
                             </li>
@@ -131,19 +118,10 @@
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                         <li class="nav-items">
                                             <a class="nav-link dropdown-item" href="#">
-                                                <span class="ms-2">items1</span>
+                                                <span>No items Select</span>
                                             </a>
                                         </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="#">
-                                                <span class="ms-2">items1</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="#">
-                                                <span class="ms-2">items1</span>
-                                            </a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </li>
@@ -159,8 +137,9 @@
         </div>
 
     </header>
+    <!-- header end -->
 
-    <main class="course-page ">
+    <main class="course-page">
 
 
         <div class="filter-area h-padding-2 live-filter-area mt-45">
@@ -219,18 +198,67 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <div class="live-content">
-                                <div class="section-heading ">
-                                    <h2 class="s-heading ">
+                                <div class="section-heading">
+                                    <h2 class="s-heading">
                                         Free Live Classes
                                     </h2>
                                 </div>
                                 <!-- courses-area start -->
                                 <div class="course-area">
                                     <div class="row">
+                                        <div class="col-lg-4 col-md-6 mb-50">
+                                            <div class="single-wrapper position-relative">
+                                                <div class="single-wrapper-t">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy">
+                                                    <div class="single-content">
+                                                        <h3 class="title">
+                                                            Smart Bangla Speak
+                                                        </h3>
+                                                        <p class="white-c">Learn with Abdullah Al Momin</p>
+                                                    </div>
+                                                    <div class="btn-abs">
+                                                        <a href="# " class="record-btn c-btn-1">Live</a>
+                                                    </div>
+                                                </div>
+                                                <div class="single-wrapper-b box_shadow">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="hours-c d-flex align-items-center gap-2">
+                                                            <img src="assets/img/icons/ant-design_clock-circle-outlined.svg " alt="">
+                                                            <p class="t-color1">15 Hours </p>
+                                                        </div>
+                                                        <div class="hours-c d-flex align-items-center gap-2">
+                                                            <img src="assets/img/icons/heroicons-outline_user-group.svg " alt="">
+                                                            <p class="t-color1">400+</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-wrapper-b-content">
+                                                        <h3 class="c-title">
+                                                            Speak Bangla in a Smart Way for Your Career Development
+                                                        </h3>
+                                                        <p class="s-color1"> <span class="t-color1">Instructor: </span> Abdullah Al Momin</p>
+                                                        <div class="enroll d-lg-flex justify-content-between pt-15">
+                                                            <div class="price d-flex align-items-center gap-3">
+                                                                <p class="t-color1 f-300 line-through">TK. 7000</p>
+                                                                <p class="c-title">TK. 6000</p>
+                                                            </div>
+                                                            <div class="enroll-btn">
+                                                                <a href="# " class=" c-btn-2">
+                                                Enroll Now
+                                            </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -279,7 +307,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -328,7 +356,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -377,7 +405,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -426,56 +454,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
-                                                    <div class="single-content ">
-                                                        <h3 class="title ">
-                                                            Smart Bangla Speak
-                                                        </h3>
-                                                        <p class="white-c ">Learn with Abdullah Al Momin</p>
-                                                    </div>
-                                                    <div class="btn-abs ">
-                                                        <a href="# " class="record-btn c-btn-1 ">Live</a>
-                                                    </div>
-                                                </div>
-                                                <div class="single-wrapper-b box_shadow ">
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div class="hours-c d-flex align-items-center gap-2 ">
-                                                            <img src="assets/img/icons/ant-design_clock-circle-outlined.svg " alt=" ">
-                                                            <p class="t-color1 ">15 Hours </p>
-                                                        </div>
-                                                        <div class="hours-c d-flex align-items-center gap-2 ">
-                                                            <img src="assets/img/icons/heroicons-outline_user-group.svg " alt=" ">
-                                                            <p class="t-color1 ">400+</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="single-wrapper-b-content ">
-                                                        <h3 class="c-title ">
-                                                            Speak Bangla in a Smart Way for Your Career Development
-                                                        </h3>
-                                                        <p class="s-color1 "> <span class="t-color1 ">Instructor: </span> Abdullah Al Momin</p>
-                                                        <div class="enroll d-lg-flex justify-content-between pt-15 ">
-                                                            <div class="price d-flex align-items-center gap-3 ">
-                                                                <p class="t-color1 f-300 line-through ">TK. 7000</p>
-                                                                <p class="c-title ">TK. 6000</p>
-                                                            </div>
-                                                            <div class="enroll-btn ">
-                                                                <a href="# " class=" c-btn-2 ">
-                                                Enroll Now
-                                            </a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 mb-50 ">
-                                            <div class="single-wrapper position-relative ">
-                                                <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -540,7 +519,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -589,7 +568,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -638,7 +617,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -703,7 +682,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -752,7 +731,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -801,7 +780,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -850,7 +829,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -899,7 +878,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -948,7 +927,7 @@
                                         <div class="col-lg-4 col-md-6 mb-50 ">
                                             <div class="single-wrapper position-relative ">
                                                 <div class="single-wrapper-t ">
-                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png " alt="unsplash_Hlkuojv_P6I " loading="lazy ">
+                                                    <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I " loading="lazy ">
                                                     <div class="single-content ">
                                                         <h3 class="title ">
                                                             Smart Bangla Speak
@@ -1007,27 +986,20 @@
 
         </div>
 
-
-
-
-
-
-
     </main>
     <!-- footer start -->
-    <footer class="mt-50 footer ">
-        <!-- <img src="assets/img/footer.png " alt=" "> -->
-        <div class="footer-content ">
-            <div class="container ">
-                <div class="row align-xl-items-center ">
+    <footer class="mt-50 footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row align-xl-items-center">
                     <div class="col-xl-4 col-lg-4 text-center mb-15 ">
                         <div class="footer-l ">
                             <div>
-                                <a href="index.html " class="footer-logo ">
-                                    <img src="assets/img/logo/logo.png " alt="logo ">
+                                <a href="index.html " class="footer-logo">
+                                    <img src="assets/img/logo/logo.png" alt="logo">
                                 </a>
                             </div>
-                            <div class="fo-con mt-30 mb-20 ">
+                            <div class="fo-con mt-15 mb-15">
                                 <p class="t14 ">
                                     If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
                                     middle of text.
@@ -1036,42 +1008,41 @@
 
                         </div>
                         <div class="f-s-icon ">
-                            <!-- <p class="t18 mb-10 ">Follow Us :</p> -->
-                            <a href="# " class="so-f ">
-                                <img src="assets/img/icons/facebook.png " alt="facebook ">
+                            <a href="#" class="so-f ">
+                                <img src="assets/img/icons/facebook.png" alt="facebook ">
                             </a>
-                            <a href="# " class="so-t ">
-                                <img src="assets/img/icons/twitter.png " alt="twitter ">
+                            <a href="#" class="so-t ">
+                                <img src="assets/img/icons/twitter.png" alt="twitter ">
                             </a>
-                            <a href="# " class="so-l ">
-                                <img src="assets/img/icons/linkedin.png " alt="linkedin ">
+                            <a href="#" class="so-l ">
+                                <img src="assets/img/icons/linkedin.png" alt="linkedin ">
                             </a>
-                            <a href="# " class="so-i ">
-                                <img src="assets/img/icons/instagram.png " alt="instagram ">
+                            <a href="#" class="so-i ">
+                                <img src="assets/img/icons/instagram.png" alt="instagram ">
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-6 col-6 mb-15 ">
-                        <div class="f-link ">
-                            <div class="f-link-h ">
-                                <h4 class="t18 f-600 white-c ">
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-6 mb-15">
+                        <div class="f-link">
+                            <div class="f-link-h">
+                                <h4 class="t18 f-600 white-c">
                                     Pages
                                 </h4>
-                                <ul class="mt-15 ">
+                                <ul class="mt-15">
                                     <li>
-                                        <a href="index.html ">Home</a>
+                                        <a href="index.html">Home</a>
                                     </li>
                                     <li>
-                                        <a href="recorded.html ">Recorded Courses</a>
+                                        <a href="recorded.html">Recorded Courses</a>
                                     </li>
                                     <li>
-                                        <a href="live.html ">Live</a>
+                                        <a href="live.html">Live</a>
                                     </li>
                                     <li>
-                                        <a href="offline.html ">Online Courses</a>
+                                        <a href="offline.html">Online Courses</a>
                                     </li>
                                     <li>
-                                        <a href="Book.html ">Offline Courses</a>
+                                        <a href="Book.html">Offline Courses</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1079,18 +1050,18 @@
 
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-6 col-6 mb-15 ">
-                        <div class="f-link ">
-                            <div class="f-link-h ">
-                                <h4 class="t18 f-600 white-c ">
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-6 mb-15">
+                        <div class="f-link">
+                            <div class="f-link-h">
+                                <h4 class="t18 f-600 white-c">
                                     Useful Links
                                 </h4>
-                                <ul class="mt-15 ">
+                                <ul class="mt-15">
                                     <li>
-                                        <a href="policy.html ">Privacy policy</a>
+                                        <a href="policy.html">Privacy policy</a>
                                     </li>
                                     <li>
-                                        <a href="terms.html ">Terms & Condition</a>
+                                        <a href="terms.html">Terms & Condition</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1098,57 +1069,57 @@
 
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 mb-15 ">
-                        <div class="f-link ">
+                    <div class="col-xl-4 col-lg-4 mb-15">
+                        <div class="f-link">
 
-                            <div class="f-link-h ">
-                                <h4 class="t18 f-600 white-c ">
+                            <div class="f-link-h">
+                                <h4 class="t18 f-600 white-c">
                                     Contact Us
                                 </h4>
 
-                                <div class="d-flex justify-content-between gap-3 ">
-                                    <ul class="mt-15 ">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <ul class="mt-15">
                                         <li>
-                                            <div class="f-icons-f ">
-                                                <img class="location " src="assets/img/icons/location.png " alt="location ">
-                                                <p class="t14 ">
+                                            <div class="f-icons-f">
+                                                <img class="location " src="assets/img/icons/location.png" alt="location">
+                                                <p class="t14">
                                                     Bangladesh East Rampura,Khilgaon Dhaka,1219
                                                 </p>
                                             </div>
 
                                         </li>
                                         <li>
-                                            <div class="f-icons-f ">
-                                                <img class="phone " src="assets/img/icons/phone-line.png " alt="phone-line ">
+                                            <div class="f-icons-f">
+                                                <img class="phone " src="assets/img/icons/phone-line.png" alt="phone-line">
                                                 <p>
-                                                    <a href="tel:+88 (0) 174 396 6200 " class="t14 ">+88 (0) 174 396 6200</a>
+                                                    <a href="tel:+88 (0) 174 396 6200 " class="t14">+88 (0) 174 396 6200</a>
                                                 </p>
                                             </div>
                                         </li>
                                     </ul>
-                                    <ul class="mt-15 ">
+                                    <ul class="mt-15">
                                         <li>
-                                            <div class="f-icons-f ">
-                                                <img class="location " src="assets/img/icons/location.png " alt="location ">
-                                                <p class="t14 ">
+                                            <div class="f-icons-f">
+                                                <img class="location " src="assets/img/icons/location.png" alt="location">
+                                                <p class="t14">
                                                     BUnited Kingdom 189 Foundry Lane Southampton SO153JZ
                                                 </p>
                                             </div>
 
                                         </li>
                                         <li>
-                                            <div class="f-icons-f ">
-                                                <img class="phone " src="assets/img/icons/phone-line.png " alt="phone-line ">
+                                            <div class="f-icons-f">
+                                                <img class="phone " src="assets/img/icons/phone-line.png" alt="phone-line">
                                                 <p>
-                                                    <a href="tel:+44 (0) 238 052 8262 " class="t14 ">+44 (0) 238 052 8262</a>
+                                                    <a href="tel:+44 (0) 238 052 8262 " class="t14">+44 (0) 238 052 8262</a>
 
                                                 </p>
                                             </div>
-                                            <div class="f-icons-f ">
-                                                <img class="phone " src="assets/img/icons/phone-line.png " alt="phone-line ">
+                                            <div class="f-icons-f">
+                                                <img class="phone " src="assets/img/icons/phone-line.png" alt="phone-line">
                                                 <p>
 
-                                                    <a href="tel: +44 (0) 755 482 3078 " class="t14 "> +44 (0) 755 482 3078</a>
+                                                    <a href="tel: +44 (0) 755 482 3078 " class="t14"> +44 (0) 755 482 3078</a>
                                                 </p>
                                             </div>
                                         </li>
@@ -1162,9 +1133,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="copyright text-center mt-1 ">
-                    <p class="f-500 ">Copyright
-                        <svg width="14 " height="14 " viewBox="0 0 14 14 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                <div class="copyright text-center mt-1">
+                    <p class="f-500">Copyright
+                        <svg width="14 " height="14 " viewBox="0 0 14 14 " fill="none " xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 0.218994C3.25481 0.218994 0.21875 3.25505 0.21875 7.00024C0.21875 10.7454 3.25481 13.7815 7 13.7815C10.7452 13.7815 13.7812 10.7454 13.7812 7.00024C13.7812 3.25505 10.7452 0.218994 7 0.218994ZM10.2029 9.70052C10.1594
                                 9.75157 9.11526 10.951 7.19914 10.951C4.88335 10.951 3.24841 9.22121 3.24841 6.97063C3.24841 4.7475 4.94383 3.04951 7.1794 3.04951C9.01026 3.04951 9.96751 4.06984 10.0073 4.11329C10.0564 4.1668 10.0864 4.23508 10.0925 4.30744C10.0986
                                 4.37979 10.0806 4.45214 10.0412 4.51314L9.42925 5.46074C9.31853 5.6321 9.07996 5.66174 8.93066 5.52349C8.92429 5.51764 8.20526 4.87052 7.23863 4.87052C5.97764 4.87052 5.21749 5.78859 5.21749 6.95089C5.21749 8.03376 5.91514
@@ -1178,23 +1149,23 @@
     </footer>
     <!-- footer end -->
 
-
-
-
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
-    <script src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!--=== Popper  v2.9.2 js ===-->
-    <script src="assets/js/popper.min.js "></script>
+    <script src="assets/js/popper.min.js"></script>
     <!--=== Bootstrap 5 js ===-->
-    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--=== Wow js ===-->
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/carousel.js"></script>
     <!--=== owl carousel ===-->
-    <script src="assets/js/owl.carousel.min.js "></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <!--=== magnific-popup ===-->
-    <script src="assets/js/magnific-popup.min.js "></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
     <!--=== Main js ===-->
-    <script src="assets/js/main.js "></script>
+    <script src="assets/js/main.js"></script>
+
 
 </body>
 

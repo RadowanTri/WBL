@@ -1,6 +1,6 @@
 .filter-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
     /* grid-template-columns: repeat( 6, minmax(150px, 1fr)); */
     grid-column-gap: 16px;
     grid-row-gap: 30px;
@@ -37,7 +37,7 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     width: 100%;
-    max-width: 175px;
+    max-width: 200px;
 }
 
 .filter-grid .dropdown .dropdown-menu {

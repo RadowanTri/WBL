@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!--=== Magnific PopUp ===-->
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!--=== animate ===-->
+    <!--=== animate ===-->
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
@@ -56,7 +58,7 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                 <li class="nav-items">
                                     <a class="nav-link dropdown-item" href="#">
-                                        <span class="ms-2">No items Select</span>
+                                        <span>No items Select</span>
                                     </a>
                                 </li>
 
@@ -67,8 +69,6 @@
                     <div class="d-block d-md-none login-b">
                         <a href="javascript:void(0)" class="log-btn cmn-btn">Log in</a>
                     </div>
-
-
                     <div class="collapse navbar-collapse nav-links" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
@@ -117,7 +117,7 @@
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                         <li class="nav-items">
                                             <a class="nav-link dropdown-item" href="#">
-                                                <span class="ms-2">No Items Select</span>
+                                                <span>No items Select</span>
                                             </a>
                                         </li>
 
@@ -154,7 +154,7 @@
                             <a href="all.html" target="_blank" class="view-c cmn-btn">View Courses</a>
                         </div>
                     </div>
-                    <div class="col-lg-6 offset-xl-2 col-xl-5 text-end  mb-25 animated zoomIn">
+                    <div class="col-lg-6 offset-xl-2 col-xl-5 text-end  mb-25 animated zoomIn d-md-block d-none">
                         <img src="assets/img/banner-img.png" alt="banner" loading="lazy">
                     </div>
                 </div>
@@ -471,7 +471,7 @@
 
                     </div>
 
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-6  mb-50 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="single-wrapper position-relative">
                             <div class="single-wrapper-t">
                                 <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I" loading="lazy">
@@ -520,7 +520,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-lg-4 col-md-6 mb-50 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="single-wrapper position-relative">
                             <div class="single-wrapper-t">
                                 <img src="assets/img/unsplash_Hlkuojv_P6I.png" alt="unsplash_Hlkuojv_P6I" loading="lazy">
@@ -1862,7 +1862,6 @@
     </main>
     <!-- footer start -->
     <footer class="mt-50 footer ">
-        <!-- <img src="assets/img/footer.png " alt=" "> -->
         <div class="footer-content ">
             <div class="container ">
                 <div class="row align-xl-items-center ">
@@ -1873,7 +1872,7 @@
                                     <img src="assets/img/logo/logo.png " alt="logo ">
                                 </a>
                             </div>
-                            <div class="fo-con mt-30 mb-20 ">
+                            <div class="fo-con mt-15 mb-15">
                                 <p class="t14 ">
                                     If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
                                     middle of text.
@@ -2000,11 +1999,7 @@
                                         </li>
                                     </ul>
                                 </div>
-
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>
@@ -2022,10 +2017,6 @@
         </div>
     </footer>
     <!-- footer end -->
-
-
-
-
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
     <script src="assets/js/jquery-3.6.0.min.js "></script>
@@ -2033,6 +2024,7 @@
     <script src="assets/js/popper.min.js "></script>
     <!--=== Bootstrap 5 js ===-->
     <script src="assets/js/bootstrap.min.js "></script>
+    <!--=== Wow js ===-->
     <script src="assets/js/wow.min.js "></script>
     <script src="assets/js/carousel.js "></script>
     <!--=== owl carousel ===-->
@@ -2041,48 +2033,6 @@
     <script src="assets/js/magnific-popup.min.js "></script>
     <!--=== Main js ===-->
     <script src="assets/js/main.js "></script>
-
-    <script>
-        // let moreArrow = document.querySelector(".arrow ");
-        // moreArrow.onclick = function() {
-        // navLinks.classList.toggle("show2 ");
-        // };
-
-        // Sticky Header Js
-        // Sticky Header Js
-        //           $(document).ready(function(){
-        //     if ($(window).width() < 768){
-        //             $(".dropdown_list ").css("display ", "none ");
-        //             $(".header_menu .menu_list li ").click(function(){
-        //     		$(".dropdown_list ").toggle();
-        // 			});
-        //     }
-        // });
-
-        //  if($(window).width() > 768){
-        //  $(document).ready(function(){
-        //  $(window).on('scroll', function () {
-        //  var scroll = $(window).scrollTop();
-        //  if (scroll < 245) { $(".header-transparent ").removeClass("sticky "); } else {
-        //      $(".header-transparent ").addClass("sticky "); } }); }); }
-        $(window).on('scroll', function() {
-            var scroll = $(window).scrollTop();
-            if (scroll < 245) {
-                $(".header-transparent ").removeClass("sticky ");
-            } else {
-                $(".header-transparent ").addClass("sticky ");
-            }
-        });
-        $(function() {
-
-            $(".sub-menu ").parent("li ").on("click ", function(e) {
-                $("sub-menu ").removeClass("close ");
-                $(this).find(".sub-menu ").toggleClass("open ");
-            });
-
-        });
-    </script>
-
 
 </body>
 

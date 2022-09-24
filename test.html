@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!--=== Magnific PopUp ===-->
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!--=== animate ===-->
+    <!--=== animate ===-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/header.css">
@@ -30,162 +33,158 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <style>
         #header {
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        width: 100%;
-        transition: top 0.2s ease-in-out;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            width: 100%;
+            transition: top 0.2s ease-in-out;
         }
-
+        
         .header_menu .right_side ul.menu_list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+            margin: 0;
+            padding: 0;
+            list-style: none;
         }
-
+        
         .header_menu .right_side ul.menu_list li {
-        display: inline-block;
-        margin: 20px;
+            display: inline-block;
+            margin: 20px;
         }
-
+        
         .header_menu .right_side ul.menu_list li a {
-        font-size: 16px;
-        color: #000;
-        text-transform: uppercase;
+            font-size: 16px;
+            color: #000;
+            text-transform: uppercase;
         }
-
+        
         .header_menu .right_side ul.menu_list li a.resource_link,
         .header_menu .right_side ul.menu_list li a.aboutus_link {
-        padding-bottom: 20px;
+            padding-bottom: 20px;
         }
-
+        
         .header_menu .right_side ul.menu_list li a:hover {
-        color: #00f;
+            color: #00f;
         }
-
+        
         .header_menu .right_side ul.menu_list li ul.dropdown_list {
-        display: none;
-        padding: 0;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        position: absolute;
-        background: #fff;
-        z-index: 9999;
-        width: 150px;
-        margin-top: 10px;
+            display: none;
+            padding: 0;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            background: #fff;
+            z-index: 9999;
+            width: 150px;
+            margin-top: 10px;
         }
-
+        
         ul.dropdown_list li {
-        display: block !important;
-        line-height: 22px;
-        text-align: left;
-        margin: 0 !important;
-        position: relative;
-        transition:0.5s;
+            display: block !important;
+            line-height: 22px;
+            text-align: left;
+            margin: 0 !important;
+            position: relative;
+            transition: 0.5s;
         }
-
+        
         ul.dropdown_list li a {
-
-        font-size: 16px !important;
-        text-decoration: none;
-        display: block;
-        margin: 0 !important;
-        padding: 8px 10px 8px 25px;
+            font-size: 16px !important;
+            text-decoration: none;
+            display: block;
+            margin: 0 !important;
+            padding: 8px 10px 8px 25px;
         }
-
+        
         ul.dropdown_list li a:hover {
-        background-color: #DCB856;
-        color: #fff !important;
-        transition: 0.2s;
+            background-color: #DCB856;
+            color: #fff !important;
+            transition: 0.2s;
         }
-
+        
         .header_menu .right_side ul.menu_list li ul.dropdown_list li a {
-        color: #000;
+            color: #000;
         }
-
+        
         .header_menu .right_side ul.menu_list li:hover ul.dropdown_list {
-          display: block;
+            display: block;
         }
-
+        
         .header_menu .right_side ul.menu_list li ul.dropdown_list li a:hover {
             background-color: #00f;
             color: #fff !important;
             transition: 0.2s;
         }
-
+        
         @media all and (max-width:768px) {
-        .header_menu .right_side ul.menu_list {
-        margin-top: 50px !important;
-        }
-        .header_menu .right_side ul.menu_list {
-        margin: 0;
-        padding: 0;
-        }
-        .header_menu .right_side ul.menu_list li {
-        width: 100%;
-        margin: 0;
-        border-bottom: 1px solid #DCB856;
-        }
-        .header_menu .right_side ul.menu_list li a {
-        display: block;
-        padding: 15px;
-        }
-        .fixed .header_menu .right_side ul.menu_list li a {
-        color: #fff !important;
-        }
-        .header_menu .right_side ul.menu_list li ul.dropdown_list li a:hover {
-        color: #000 !important
-        }
-        .header_menu .right_side ul.menu_list li ul.dropdown_list li a {
-        color: #000 !important;
-        }
-
-
-        ul.dropdown_list.close,
-        ul.dropdown_list {
-        display: none !important;
-        box-shadow: none !important;;
-        position: static !important;
-        margin-left : 20px !important;
-        background-color: #fff;
-        width: 100% !important;
-        transition : all 0.5s ease;
-        }
-
-        ul.dropdown_list.open {
-        display: block !important;
-        }
-
+            .header_menu .right_side ul.menu_list {
+                margin-top: 50px !important;
+            }
+            .header_menu .right_side ul.menu_list {
+                margin: 0;
+                padding: 0;
+            }
+            .header_menu .right_side ul.menu_list li {
+                width: 100%;
+                margin: 0;
+                border-bottom: 1px solid #DCB856;
+            }
+            .header_menu .right_side ul.menu_list li a {
+                display: block;
+                padding: 15px;
+            }
+            .fixed .header_menu .right_side ul.menu_list li a {
+                color: #fff !important;
+            }
+            .header_menu .right_side ul.menu_list li ul.dropdown_list li a:hover {
+                color: #000 !important
+            }
+            .header_menu .right_side ul.menu_list li ul.dropdown_list li a {
+                color: #000 !important;
+            }
+            ul.dropdown_list.close,
+            ul.dropdown_list {
+                display: none !important;
+                box-shadow: none !important;
+                ;
+                position: static !important;
+                margin-left: 20px !important;
+                background-color: #fff;
+                width: 100% !important;
+                transition: all 0.5s ease;
+            }
+            ul.dropdown_list.open {
+                display: block !important;
+            }
         }
     </style>
 </head>
 
 <body>
- <header id="header">
-     <div class="header_menu">
-         <div class="right_side float_right">
-             <ul class="menu_list">
-                 <li><a href="home" class="home_link">Home</a></li>
-                 <li><a href="#about" class="aboutus_link">About Us</a>
-                     <ul id="about" class="dropdown_list about_dropdown">
-                         <li><a href="about1" class="">About 1</a></li>
-                         <li><a href="about2" class="">About 2</a></li>
-                         <li><a href="about3" class="">About 3</a></li>
-                         <li><a href="about4" class="">About 4</a></li>
-                     </ul>
-                 </li>
+    <header id="header">
+        <div class="header_menu">
+            <div class="right_side float_right">
+                <ul class="menu_list">
+                    <li><a href="home" class="home_link">Home</a></li>
+                    <li><a href="#about" class="aboutus_link">About Us</a>
+                        <ul id="about" class="dropdown_list about_dropdown">
+                            <li><a href="about1" class="">About 1</a></li>
+                            <li><a href="about2" class="">About 2</a></li>
+                            <li><a href="about3" class="">About 3</a></li>
+                            <li><a href="about4" class="">About 4</a></li>
+                        </ul>
+                    </li>
 
-                 <li><a href="gallery" class="gallery_link">Gallery</a></li>
-                 <li><a href="#ressource" class="resource_link">Resources</a>
-                     <ul id="ressource" class="dropdown_list">
-                         <li><a href="resources1">Resources 1</a></li>
-                         <li><a href="resources2">Resources 2</a></li>
-                         <li><a href="resources3">Resources 3</a></li>
-                     </ul>
-                 </li>
-             </ul>
-         </div>
-     </div>
- </header>
+                    <li><a href="gallery" class="gallery_link">Gallery</a></li>
+                    <li><a href="#ressource" class="resource_link">Resources</a>
+                        <ul id="ressource" class="dropdown_list">
+                            <li><a href="resources1">Resources 1</a></li>
+                            <li><a href="resources2">Resources 2</a></li>
+                            <li><a href="resources3">Resources 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
 
 
@@ -207,9 +206,9 @@
     <script>
         $(function() {
 
-            $(".dropdown_list").parent("li").on("click",function(e){
-            $("ul.dropdown_list").removeClass("close");
-            $(this).find("ul.dropdown_list").toggleClass("open");
+            $(".dropdown_list").parent("li").on("click", function(e) {
+                $("ul.dropdown_list").removeClass("close");
+                $(this).find("ul.dropdown_list").toggleClass("open");
             });
 
         });

@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!--=== Magnific PopUp ===-->
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!--=== animate ===-->
+    <!--=== animate ===-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/header.css">
@@ -36,7 +39,7 @@
 
     <!-- header start -->
     <!-- header start -->
-    <header id="header">
+    <header class="header-transparent tt-nav" id="top-header">
         <div class="header-area">
             <nav class="navbar navbar-expand-md">
                 <div class="container">
@@ -58,19 +61,10 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                 <li class="nav-items">
                                     <a class="nav-link dropdown-item" href="#">
-                                        <span class="ms-2">items1</span>
+                                        <span>No items Select</span>
                                     </a>
                                 </li>
-                                <li class="nav-items">
-                                    <a class="nav-link dropdown-item" href="#">
-                                        <span class="ms-2">items1</span>
-                                    </a>
-                                </li>
-                                <li class="nav-items">
-                                    <a class="nav-link dropdown-item" href="#">
-                                        <span class="ms-2">items1</span>
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
 
@@ -78,9 +72,7 @@
                     <div class="d-block d-md-none login-b">
                         <a href="javascript:void(0)" class="log-btn cmn-btn">Log in</a>
                     </div>
-
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse nav-links" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -91,47 +83,25 @@
 
                             <li class="nav-item">
                                 <a class="nav-link" href="live.html">Live</a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <a href="#" class="nav-link  toggle-none dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 
-                                        <span class="me-2">Categories</span>
-                                        <i class="fas fa-chevron-down"></i>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="trier.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Trier One</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="trier2.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Trier Two</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="trier3.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Trier Three</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="trier4.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Trier Four</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="trier5.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Trier Five</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+
+                                      Categories
+                                        <span class="indicator"><i class="fas fa-chevron-down"></i></span>
+                                        
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="all.html">All Courses</a></li>
+                                    <li><a href="trier.html">Trier One</a></li>
+                                    <li><a href="trier2.html">Trier Two</a></li>
+                                    <li><a href="trier3.html">Trier Three</a></li>
+                                    <li><a href="trier4.html">Trier Four</a></li>
+                                    <li><a href="trier5.html">Trier Five</a></li>
+                                </ul>
+
                             </li>
 
                             <li class="nav-item">
@@ -150,19 +120,10 @@
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                         <li class="nav-items">
                                             <a class="nav-link dropdown-item" href="#">
-                                                <span class="ms-2">items1</span>
+                                                <span>No items Select</span>
                                             </a>
                                         </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="#">
-                                                <span class="ms-2">items1</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="#">
-                                                <span class="ms-2">items1</span>
-                                            </a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </li>
@@ -1363,7 +1324,6 @@
     </main>
     <!-- footer start -->
     <footer class="mt-50 footer ">
-        <!-- <img src="assets/img/footer.png " alt=" "> -->
         <div class="footer-content ">
             <div class="container ">
                 <div class="row align-xl-items-center ">
@@ -1374,7 +1334,7 @@
                                     <img src="assets/img/logo/logo.png " alt="logo ">
                                 </a>
                             </div>
-                            <div class="fo-con mt-30 mb-20 ">
+                            <div class="fo-con mt-15 mb-15">
                                 <p class="t14 ">
                                     If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
                                     middle of text.
@@ -1415,7 +1375,7 @@
                                         <a href="live.html ">Live</a>
                                     </li>
                                     <li>
-                                        <a href="offline.html ">Offline Courses</a>
+                                        <a href="offline.html ">Online Courses</a>
                                     </li>
                                     <li>
                                         <a href="Book.html ">Offline Courses</a>
@@ -1501,11 +1461,7 @@
                                         </li>
                                     </ul>
                                 </div>
-
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>
@@ -1513,10 +1469,9 @@
                     <p class="f-500 ">Copyright
                         <svg width="14 " height="14 " viewBox="0 0 14 14 " fill="none " xmlns="http://www.w3.org/2000/svg ">
                         <path d="M7 0.218994C3.25481 0.218994 0.21875 3.25505 0.21875 7.00024C0.21875 10.7454 3.25481 13.7815 7 13.7815C10.7452 13.7815 13.7812 10.7454 13.7812 7.00024C13.7812 3.25505 10.7452 0.218994 7 0.218994ZM10.2029 9.70052C10.1594
-                                9.75157 9.11526 10.951 7.19914 10.951C4.88335 10.951 3.24841 9.22121 3.24841 6.97063C3.24841 4.7475 4.94383 3.04951 7.1794 3.04951C9.01026 3.04951 9.96751 4.06984 10.0073 4.11329C10.0564 4.1668 10.0864 4.23508 10.0925 4.30744C10.0986
-                                4.37979 10.0806 4.45214 10.0412 4.51314L9.42925 5.46074C9.31853 5.6321 9.07996 5.66174 8.93066 5.52349C8.92429 5.51764 8.20526 4.87052 7.23863 4.87052C5.97764 4.87052 5.21749 5.78859 5.21749 6.95089C5.21749 8.03376 5.91514
-                                9.12997 7.2485 9.12997C8.30662 9.12997 9.0335 8.3551 9.04072 8.34725C9.18105 8.19508 9.42514 8.20963 9.5468 8.37605L10.218 9.29403C10.2616 9.35361 10.2838 9.42614 10.281 9.4999C10.2783 9.57366 10.2508 9.64434 10.2029 9.70052Z
-                                " fill="white "/>
+                    9.75157 9.11526 10.951 7.19914 10.951C4.88335 10.951 3.24841 9.22121 3.24841 6.97063C3.24841 4.7475 4.94383 3.04951 7.1794 3.04951C9.01026 3.04951 9.96751 4.06984 10.0073 4.11329C10.0564 4.1668 10.0864 4.23508 10.0925 4.30744C10.0986 4.37979
+                    10.0806 4.45214 10.0412 4.51314L9.42925 5.46074C9.31853 5.6321 9.07996 5.66174 8.93066 5.52349C8.92429 5.51764 8.20526 4.87052 7.23863 4.87052C5.97764 4.87052 5.21749 5.78859 5.21749 6.95089C5.21749 8.03376 5.91514 9.12997 7.2485 9.12997C8.30662
+                    9.12997 9.0335 8.3551 9.04072 8.34725C9.18105 8.19508 9.42514 8.20963 9.5468 8.37605L10.218 9.29403C10.2616 9.35361 10.2838 9.42614 10.281 9.4999C10.2783 9.57366 10.2508 9.64434 10.2029 9.70052Z " fill="white "/>
                         </svg> 2022 Work Based Learning All Rights Reserved</p>
                 </div>
 
@@ -1524,10 +1479,6 @@
         </div>
     </footer>
     <!-- footer end -->
-
-
-
-
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
     <script src="assets/js/jquery-3.6.0.min.js "></script>
@@ -1535,7 +1486,9 @@
     <script src="assets/js/popper.min.js "></script>
     <!--=== Bootstrap 5 js ===-->
     <script src="assets/js/bootstrap.min.js "></script>
-    <script src="assets/js/carousel.js"></script>
+    <!--=== Wow js ===-->
+    <script src="assets/js/wow.min.js "></script>
+    <script src="assets/js/carousel.js "></script>
     <!--=== owl carousel ===-->
     <script src="assets/js/owl.carousel.min.js "></script>
     <!--=== magnific-popup ===-->

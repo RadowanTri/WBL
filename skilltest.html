@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!--=== Magnific PopUp ===-->
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!--=== animate ===-->
+    <!--=== animate ===-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/header.css">
@@ -35,7 +38,7 @@
 <body>
     <!-- header start -->
     <!-- header start -->
-    <header id="header">
+    <header class="header-transparent tt-nav" id="top-header">
         <div class="header-area">
             <nav class="navbar navbar-expand-md">
                 <div class="container">
@@ -57,19 +60,10 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                 <li class="nav-items">
                                     <a class="nav-link dropdown-item" href="#">
-                                        <span class="ms-2">items1</span>
+                                        <span>No items Select</span>
                                     </a>
                                 </li>
-                                <li class="nav-items">
-                                    <a class="nav-link dropdown-item" href="#">
-                                        <span class="ms-2">items1</span>
-                                    </a>
-                                </li>
-                                <li class="nav-items">
-                                    <a class="nav-link dropdown-item" href="#">
-                                        <span class="ms-2">items1</span>
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
 
@@ -77,9 +71,7 @@
                     <div class="d-block d-md-none login-b">
                         <a href="javascript:void(0)" class="log-btn cmn-btn">Log in</a>
                     </div>
-
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse nav-links" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -90,47 +82,25 @@
 
                             <li class="nav-item">
                                 <a class="nav-link" href="live.html">Live</a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <a href="#" class="nav-link  toggle-none dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 
-                                        <span class="me-2">Categories</span>
-                                        <i class="fas fa-chevron-down"></i>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="trier.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Trier One</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="trier2.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Trier Two</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="trier3.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Trier Three</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="trier4.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Trier Four</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="trier5.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                                <span class="ms-2">Trier Five</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+
+                                      Categories
+                                        <span class="indicator"><i class="fas fa-chevron-down"></i></span>
+                                        
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="all.html">All Courses</a></li>
+                                    <li><a href="trier.html">Trier One</a></li>
+                                    <li><a href="trier2.html">Trier Two</a></li>
+                                    <li><a href="trier3.html">Trier Three</a></li>
+                                    <li><a href="trier4.html">Trier Four</a></li>
+                                    <li><a href="trier5.html">Trier Five</a></li>
+                                </ul>
+
                             </li>
 
                             <li class="nav-item">
@@ -149,19 +119,10 @@
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                         <li class="nav-items">
                                             <a class="nav-link dropdown-item" href="#">
-                                                <span class="ms-2">items1</span>
+                                                <span>No items Select</span>
                                             </a>
                                         </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="#">
-                                                <span class="ms-2">items1</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-items">
-                                            <a class="nav-link dropdown-item" href="#">
-                                                <span class="ms-2">items1</span>
-                                            </a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </li>
@@ -594,7 +555,7 @@
                                     <img src="assets/img/logo/logo.png " alt="logo ">
                                 </a>
                             </div>
-                            <div class="fo-con mt-30 mb-20 ">
+                            <div class="fo-con mt-15 mb-15">
                                 <p class="t14 ">
                                     If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
                                     middle of text.

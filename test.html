@@ -22,7 +22,6 @@
     <!--=== Magnific PopUp ===-->
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <!--=== animate ===-->
-    <!--=== animate ===-->
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
@@ -159,33 +158,298 @@
 </head>
 
 <body>
-    <header id="header">
-        <div class="header_menu">
-            <div class="right_side float_right">
-                <ul class="menu_list">
-                    <li><a href="home" class="home_link">Home</a></li>
-                    <li><a href="#about" class="aboutus_link">About Us</a>
-                        <ul id="about" class="dropdown_list about_dropdown">
-                            <li><a href="about1" class="">About 1</a></li>
-                            <li><a href="about2" class="">About 2</a></li>
-                            <li><a href="about3" class="">About 3</a></li>
-                            <li><a href="about4" class="">About 4</a></li>
-                        </ul>
-                    </li>
 
-                    <li><a href="gallery" class="gallery_link">Gallery</a></li>
-                    <li><a href="#ressource" class="resource_link">Resources</a>
-                        <ul id="ressource" class="dropdown_list">
-                            <li><a href="resources1">Resources 1</a></li>
-                            <li><a href="resources2">Resources 2</a></li>
-                            <li><a href="resources3">Resources 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
+
+    <style>
+        .price-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, calc(33.3333% - 26.6667px));
+            min-height: 504px;
+            grid-gap: 30px;
+        }
+        
+        .price-wrapper .top-heading {
+            min-height: 175px;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: auto;
+            /* border-top-left-radius: 30px;
+            border-top-right-radius: 30px; */
+        }
+        
+        .price-wrapper .single-item {
+            color: #111111;
+            background-color: #ffffff;
+            box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 10%);
+            padding: 0 0 25px;
+            text-align: center;
+            transition: all .3s ease;
+            margin: 15px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* border-radius: 30px; */
+        }
+        
+        .price-wrapper .single-item.active,
+        .price-wrapper .single-item:hover {
+            color: #fff;
+            background-color: #000;
+        }
+        
+        .price-wrapper .single-item.active .top-heading,
+        .price-wrapper .single-item:hover .top-heading {
+            background-color: #1e8af0;
+        }
+        
+        .price-wrapper .single-item .plan-t {
+            font-weight: 700;
+            word-wrap: break-word;
+            position: relative
+        }
+        
+        .price-wrapper .single-item h3 {
+            font-size: 1.75rem;
+            line-height: 1.2;
+        }
+        
+        .price-wrapper .single-item h4 {
+            font-size: 2.75rem;
+            line-height: 1.2;
+            margin: 20px 11px 0;
+        }
+        
+        .price-wrapper .single-item h5 {
+            font-size: 1.125rem;
+            line-height: 1.2;
+        }
+        
+        .price-wrapper .top-heading-s {
+            position: relative;
+            flex: 1;
+            max-width: 100%;
+            transition-duration: inherit;
+            padding: 25px;
+        }
+        
+        .price-wrapper .service-plan ul {
+            width: 150px;
+            margin: 20px auto 0;
+            position: relative;
+            text-align: center;
+        }
+        
+        .price-wrapper .service-plan p {
+            line-height: 2;
+            letter-spacing: 1px;
+            text-align: center;
+            font-size: 16px;
+        }
+        
+        .price-wrapper .list-icon {
+            margin-right: 0.8em;
+            width: 1em;
+            height: 1em;
+            fill: currentColor;
+            text-align: center;
+            height: auto;
+            margin-top: -4px;
+        }
+        
+        .price-wrapper .list-icon {
+            color: #1e8af0 !important;
+        }
+        
+        .price-wrapper ul li {
+            position: relative !important;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .price-wrapper .btn-1 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: normal;
+            margin: 25px auto 0;
+            padding: 10px 35px;
+            display: inline-block;
+            background-color: #1e8af0;
+            color: #fff;
+        }
+        
+        .price-wrapper .btn-1:hover {
+            filter: brightness(1.1);
+        }
+        
+        .price-wrapper .btn-1 span {
+            font-size: 20px;
+        }
+        
+        @media (max-width: 991px) {
+            .price-wrapper {
+                grid-template-columns: repeat(2, calc(50% - 20.000025px));
+                grid-gap: 10px;
+            }
+            .price-wrapper .top-heading-s {
+                padding: 20px;
+            }
+            .price-wrapper .btn-1 {
+                font-size: 1rem;
+                margin: 20px auto 0;
+                padding: 8px 25px;
+            }
+            .price-wrapper .single-item h3 {
+                font-size: 1.5rem;
+            }
+            .price-wrapper .single-item h4 {
+                font-size: 2rem;
+                margin: 15px 11px 0;
+            }
+            .price-wrapper .single-item h5 {
+                font-size: 1.1rem;
+            }
+            .price-wrapper .top-heading {
+                min-height: 145px;
+            }
+            price-wrapper .service-plan ul {
+                width: 180px;
+                margin: 15px auto 0;
+            }
+            .price-wrapper .service-plan p {
+                line-height: 1.5;
+                font-size: 15px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .price-wrapper {
+                grid-template-columns: repeat(1, calc(100% - 20.000025px));
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="price-wrapper">
+            <div class="single-item">
+                <div class="top-heading">
+                    <div class="top-heading-s">
+                        <h3 class="plan-t">Fee</h3>
+                        <h4 class="plan-t">$0</h4>
+                        <h5 class="plan-t">Per Month
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="service-plan">
+                    <ul>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <a href="#" class="btn-1">
+                    Get Plan 
+                    <span>&#8594;</span>
+                    
+                </a>
+
+
             </div>
-        </div>
-    </header>
+            <div class="single-item single-midle-items active">
+                <div class="top-heading">
+                    <div class="top-heading-s">
+                        <h3 class="plan-t">Personal</h3>
+                        <h4 class="plan-t">$10</h4>
+                        <h5 class="plan-t">Per Month
+                        </h5>
+                    </div>
+                </div>
 
+                <div class="service-plan">
+                    <ul>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <a href="#" class="btn-1">
+                    Get Plan 
+                    <span>&#8594;</span>
+                    
+                </a>
+
+
+            </div>
+            <div class="single-item  ">
+                <div class="top-heading">
+                    <div class="top-heading-s">
+                        <h3 class="plan-t">Business</h3>
+                        <h4 class="plan-t">$50</h4>
+                        <h5 class="plan-t">Per Month
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="service-plan">
+                    <ul>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                        <li>
+                            <span xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="list-icon">■</span>
+                            <p>15 Users</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <a href="#" class="btn-1">
+                    Get Plan 
+                    <span>&#8594;</span>
+                    
+                </a>
+
+
+            </div>
+
+        </div>
+    </div>
 
 
     <!--=== All Plugin ===-->

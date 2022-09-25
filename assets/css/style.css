@@ -25,6 +25,20 @@
             
             .wbl-compare-c {
                 display: inline-block;
+                border: 1px solid #dee2e6;
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -ms-transition: all .3s ease;
+                -o-transition: all .3s ease;
+            }
+            
+            .wbl-compare-c:hover {
+                box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+            }
+            
+            .wbl-compare-c:hover .tier-num p.t-color {
+                color: var(--s-primary-color);
             }
             
             .wbl-compare-c .tier-num h3 {
@@ -35,6 +49,10 @@
                 -webkit-text-fill-color: #fff;
                 -webkit-text-stroke-width: 1px;
                 display: inline-block;
+            }
+            
+            .wbl-compare-c .tier-num p {
+                font-weight: 500;
             }
             
             .wbl-compare-c .tier-num span {
@@ -48,8 +66,8 @@
                 display: flex;
                 align-items: center;
                 background: #FFFFFF;
-                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
                 padding: 20px;
+                /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); */
                 width: 280px;
                 height: 90px;
                 transition: all .3s;

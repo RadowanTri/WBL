@@ -126,6 +126,30 @@ $(document).ready(function($) {
 
         }
     });
+    var $trierSlider = $(".trier-slider");
+    $trierSlider.owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplayTimeout: 7000,
+        autoplay: true,
+        margin: 30,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            992: {
+                items: 1,
+            },
+            1300: {
+                items: 1,
+            },
+
+        }
+    });
     var $onlineSlider = $(".online-slider");
     $onlineSlider.owlCarousel({
         loop: true,

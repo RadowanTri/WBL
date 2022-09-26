@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <!--=== Style & Responsive  Css ===-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/allcourse.css">
     <!--=== Responsive Css ===-->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -90,8 +91,8 @@
                                         
                                 </a>
                                 <ul class="sub-menu">
-                                    <li><a href="all.html">All Courses</a></li>
-                                    <li><a href="trier.html">Trier One</a></li>
+                                    <li><a href="allcourse.html">All Courses</a></li>
+                                    <li><a href="trier1.html">Trier One</a></li>
                                     <li><a href="trier2.html">Trier Two</a></li>
                                     <li><a href="trier3.html">Trier Three</a></li>
                                     <li><a href="trier4.html">Trier Four</a></li>
@@ -137,14 +138,14 @@
     </header>
     <!-- header end -->
 
-    <main class="course-page ">
+    <main class="course-page  h-padding-2">
         <!-- banner-area start -->
-        <section class="allcourse-area h-padding-2">
+        <section class="allcourse-area">
             <div class="banner com-banner  overlay" data-background="assets/img/course.png">
                 <div class="container">
                     <div class="banner-heading text-center">
                         <h1 class="banner-title">
-                            Our Courses
+                            Recorded Courses
                         </h1>
                     </div>
                 </div>
@@ -153,149 +154,150 @@
         </section>
 
         <!-- banner-area end -->
+        <!-- page-title  Start -->
+        <section class="page-title  pb-15 pt-15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="page-flex">
+                            <h2> Live Courses</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Recorded Course</li>
+                                </ol>
+                            </nav>
+                        </div>
 
-        <div class="filter-area mt-45">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- page-title  end -->
+        <div class="filter-area mt-25">
             <div class="container">
 
                 <div class="filter-by">
-                    <h3 class="c-title mb-25">
+                    <h3 class="c-title mb-15">
                         Filter by :
                     </h3>
                     <div class="filter-grid">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
-                                Programme
-                                          <img src="assets/img/icons/arrow.svg" alt="down-c">
-                                        </button>
-                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 51px);" data-popper-reference-hidden="" data-popper-escaped="">
-                                <div class="filter-t">
-                                    <div class="terms">
-                                        <input type="checkbox" id="all">
-                                        <label for="all">Tier 01</label>
-                                    </div>
-                                    <div class="terms">
-                                        <input type="checkbox" id="Tier">
-                                        <label for="Tier">Tier 01</label>
-                                    </div>
-                                    <div class="terms">
-                                        <input type="checkbox" id="Tier2">
-                                        <label for="Tier2">Tier 01</label>
-                                    </div>
 
-                                </div>
-                            </div>
-                        </div>
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Course Name
-                                          <img src="assets/img/icons/cancel.svg" alt="down-c">
-                                        </button>
-                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 51px);" data-popper-reference-hidden="" data-popper-escaped="">
+                                           <img src="assets/img/icons/arrow.svg" alt="down-c">
+                                </button>
+                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                 <div class="filter-t">
                                     <div class="terms">
-                                        <input type="checkbox" id="all1">
-                                        <label for="all1">Tier 01</label>
+                                        <input type="checkbox" id="Programming">
+                                        <label for="Programming">Programming & Development</label>
                                     </div>
                                     <div class="terms">
-                                        <input type="checkbox" id="Tier1">
-                                        <label for="Tie1r">Tier 01</label>
+                                        <input type="checkbox" id="Design">
+                                        <label for="Design">Design</label>
                                     </div>
                                     <div class="terms">
-                                        <input type="checkbox" id="Tier22">
-                                        <label for="Tier22">Tier 01</label>
+                                        <input type="checkbox" id="Research">
+                                        <label for="Research">Research</label>
+                                    </div>
+                                    <div class="terms">
+                                        <input type="checkbox" id="Marketing">
+                                        <label for="Marketing">Marketing</label>
+                                    </div>
+                                    <div class="terms">
+                                        <input type="checkbox" id="Multimedia">
+                                        <label for="Multimedia">Multimedia & Broadcasting</label>
+                                    </div>
+                                    <div class="terms">
+                                        <input type="checkbox" id="Book">
+                                        <label for="Book">Book</label>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
-                                Type
-                                          <img src="assets/img/icons/arrow.svg" alt="down-c">
-                                        </button>
-                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 51px);" data-popper-reference-hidden="" data-popper-escaped="">
-                                <div class="filter-t">
-                                    <div class="terms">
-                                        <input type="checkbox" id="all">
-                                        <label for="all">Tier 01</label>
-                                    </div>
-                                    <div class="terms">
-                                        <input type="checkbox" id="Tier">
-                                        <label for="Tier">Tier 01</label>
-                                    </div>
-                                    <div class="terms">
-                                        <input type="checkbox" id="Tier2">
-                                        <label for="Tier2">Tier 01</label>
-                                    </div>
 
-                                </div>
-                            </div>
-                        </div>
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Course Level 
                                           <img src="assets/img/icons/arrow.svg" alt="down-c">
                                         </button>
-                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 51px);" data-popper-reference-hidden="" data-popper-escaped="">
+                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                 <div class="filter-t">
                                     <div class="terms">
-                                        <input type="checkbox" id="all">
-                                        <label for="all">Tier 01</label>
+                                        <input type="checkbox" id="Beginner">
+                                        <label for="Beginner">Beginner</label>
                                     </div>
                                     <div class="terms">
-                                        <input type="checkbox" id="Tier">
-                                        <label for="Tier">Tier 01</label>
+                                        <input type="checkbox" id="Intermidiate">
+                                        <label for="Intermidiate">Intermidiate</label>
                                     </div>
                                     <div class="terms">
-                                        <input type="checkbox" id="Tier2">
-                                        <label for="Tier2">Tier 01</label>
+                                        <input type="checkbox" id="Advance">
+                                        <label for="Advance">Advance </label>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Price
                                           <img src="assets/img/icons/arrow.svg" alt="down-c">
                                         </button>
-                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 51px);" data-popper-reference-hidden="" data-popper-escaped="">
+                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                 <div class="filter-t">
                                     <div class="terms">
-                                        <input type="checkbox" id="all">
-                                        <label for="all">Tier 01</label>
+                                        <input type="checkbox" id="100">
+                                        <label for="100">TK : 100-1000</label>
                                     </div>
                                     <div class="terms">
-                                        <input type="checkbox" id="Tier">
-                                        <label for="Tier">Tier 01</label>
+                                        <input type="checkbox" id="10000">
+                                        <label for="10000">TK : 1000-10000</label>
                                     </div>
                                     <div class="terms">
-                                        <input type="checkbox" id="Tier2">
-                                        <label for="Tier2">Tier 01</label>
+                                        <input type="checkbox" id="10000+">
+                                        <label for="10000+">TK: 10000+ </label>
                                     </div>
+                                    <div class="terms">
+                                        <input type="checkbox" id="Free">
+                                        <label for="Free">Free </label>
+                                    </div>
+
 
                                 </div>
                             </div>
                         </div>
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Sort By
                                           <img src="assets/img/icons/arrow.svg" alt="down-c">
                                         </button>
-                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 51px);" data-popper-reference-hidden="" data-popper-escaped="">
+                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                 <div class="filter-t">
                                     <div class="terms">
-                                        <input type="checkbox" id="all">
-                                        <label for="all">Tier 01</label>
+                                        <input type="checkbox" id="Matched">
+                                        <label for="Matched">Best Matched</label>
                                     </div>
                                     <div class="terms">
-                                        <input type="checkbox" id="Tier">
-                                        <label for="Tier">Tier 01</label>
+                                        <input type="checkbox" id="Highest">
+                                        <label for="Highest">Highest Reviewed</label>
                                     </div>
                                     <div class="terms">
-                                        <input type="checkbox" id="Tier2">
-                                        <label for="Tier2">Tier 01</label>
+                                        <input type="checkbox" id="Low">
+                                        <label for="Low">Low Ratted</label>
                                     </div>
+                                    <div class="terms">
+                                        <input type="checkbox" id="Low">
+                                        <label for="Low">Price : Low to High</label>
+                                    </div>
+                                    <div class="terms">
+                                        <input type="checkbox" id="High">
+                                        <label for="High">Price : High to Low</label>
+                                    </div>
+
 
                                 </div>
                             </div>
@@ -303,56 +305,40 @@
                     </div>
 
                 </div>
-                <div class="filter-result mt-30">
+                <div class="filter-result mt-30 d-none">
                     <h3 class="c-title mb-25">
                         Showing all results related to :
                     </h3>
                     <div class="filter-grid">
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 All
                                           <img src="assets/img/icons/cancel.svg" alt="down-c">
                                         </button>
-                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 51px);" data-popper-reference-hidden="" data-popper-escaped="">
+                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                 <div class="filter-t">
                                     <div class="terms">
-                                        <input type="checkbox" id="all11">
-                                        <label for="all11">Tier 01</label>
+                                        <input type="checkbox" id="Design">
+                                        <label for="Design">Design</label>
                                     </div>
                                     <div class="terms">
-                                        <input type="checkbox" id="Tier11">
-                                        <label for="Tier11">Tier 01</label>
+                                        <input type="checkbox" id="Matched">
+                                        <label for="Matched">Best Matched</label>
                                     </div>
                                     <div class="terms">
-                                        <input type="checkbox" id="Tier22">
-                                        <label for="Tier22">Tier 01</label>
+                                        <input type="checkbox" id="Tier2">
+                                        <label for="Tier2">Tier 02</label>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                         <div class="dropdown">
-                            <button class="btn clear-btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                            <button class="btn clear-btn ">
                                 Clear All
                                           <img src="assets/img/icons/cancel1.svg" alt="down-c">
                                         </button>
-                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 51px);" data-popper-reference-hidden="" data-popper-escaped="">
-                                <div class="filter-t">
-                                    <div class="terms">
-                                        <input type="checkbox" id="all11">
-                                        <label for="all11">Tier 01</label>
-                                    </div>
-                                    <div class="terms">
-                                        <input type="checkbox" id="Tier11">
-                                        <label for="Tier11">Tier 01</label>
-                                    </div>
-                                    <div class="terms">
-                                        <input type="checkbox" id="Tier22">
-                                        <label for="Tier22">Tier 01</label>
-                                    </div>
 
-                                </div>
-                            </div>
                         </div>
 
 

@@ -25,16 +25,15 @@
             
             .wbl-compare-c {
                 display: inline-block;
-                border: 1px solid #dee2e6;
-                transition: all .3s ease;
-                -webkit-transition: all .3s ease;
-                -moz-transition: all .3s ease;
-                -ms-transition: all .3s ease;
-                -o-transition: all .3s ease;
+                /* border: 1px solid #dee2e6; */
+                transform: translateY(0);
+                transition: transform .25s ease;
+                background: #fff;
+                box-shadow: 0 40px 70px 0 rgb(0 0 0 / 5%);
             }
             
             .wbl-compare-c:hover {
-                box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+                transform: translateY(-5px);
             }
             
             .wbl-compare-c:hover .tier-num p.t-color {
@@ -65,16 +64,9 @@
             .wbl-compare-c .tier-num {
                 display: flex;
                 align-items: center;
-                background: #FFFFFF;
                 padding: 20px;
-                /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); */
                 width: 280px;
                 height: 90px;
-                transition: all .3s;
-                -webkit-transition: all .3s;
-                -moz-transition: all .3s;
-                -ms-transition: all .3s;
-                -o-transition: all .3s;
                 position: relative;
                 z-index: 333;
                 text-align: left;
